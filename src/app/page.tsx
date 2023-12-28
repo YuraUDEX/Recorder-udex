@@ -1,10 +1,13 @@
-import Recorder from '@/Components/Recorder/page'
+import Notification from '@/Components/Notification/page'
+import { Recorder } from '@/Components/Recorder/page'
 
 const Home: React.FC = () => {
   return (
     <main>
-      <h1>Voice Recorder App</h1>
-      <Recorder />
+      <div className="container">
+        <Notification />
+        <Recorder />
+      </div>
     </main>
   )
 }

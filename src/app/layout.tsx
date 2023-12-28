@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Head from 'next/head'
 import '../styles/global.sass'
+import { Header } from '@/Components/Header/page'
 
 export const metadata: Metadata = {
   title: 'Recorder-UDEX',
@@ -19,7 +20,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         />
       </Head>
       <body>
-        <div className="wrapper">{children}</div>
+        <div className="wrapper">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   )
