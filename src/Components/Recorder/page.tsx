@@ -54,7 +54,7 @@ export const Recorder = () => {
         saveRecording()
       })
 
-      // Додайте ініціалізацію розпізнавання мови
+      // ініціалізація розпізнавання мови
       recognitionRef.current = new window.webkitSpeechRecognition()
       recognitionRef.current.continuous = true
       recognitionRef.current.interimResults = true
