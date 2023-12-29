@@ -1,0 +1,72 @@
+//! VISIBLE BURGERMENU ==============
+.scripts__holder
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0)
+  transition: all 0.5s ease
+  z-index: 100
+  opacity: 0
+  visibility: hidden
+
+.show__scripts
+  opacity: 1
+  visibility: visible
+
+.scripts__window
+  position: fixed
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width: 100%
+  max-height: 80%
+  height: 100%
+  border-top-left-radius: 60px
+  border-top-right-radius: 60px
+  background-color: #fff
+  left: 0
+  bottom: -80%
+  padding: 40px 25px
+  pointer-events: auto
+  z-index: 1000
+  overflow-y: auto
+  box-shadow: 2px 0 6px #33333342
+  border-top: 3px solid #000
+  transition: all 1s ease
+  visibility: hidden
+
+.scripts__window__show
+  visibility: visible
+  bottom: 0
+
+//! VISIBLE ScriptsMENU ==============
+
+//? CONTENT ==================
+.scripts__menu__header
+  display: flex
+  flex-direction: row
+  justify-content: center
+---------------------------------------------------------
+.scripts__menu__list
+  padding-top: 60px
+  display: flex
+  flex-direction: column
+  gap: 5px
+
+.list__item
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 15px
+  padding: 20px 10px
+  border-bottom: 1px solid #c5c5c5
+  & span
+    font-size: 16px
+
+.list__item__active
+  border-radius: 8px
+  border: 2px solid #000
+
+//? CONTENT ==================

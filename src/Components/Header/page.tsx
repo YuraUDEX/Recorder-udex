@@ -5,13 +5,15 @@ import styles from './headerStyles.module.sass'
 export const Header = () => {
   return (
     <>
-      <div className={styles.header__block}>
-        <div className={styles.container__inner}>
-          <Typography variant="h1" component="h1">
-            Recording
-          </Typography>
+      <header className={styles.header__block}>
+        <div className="container">
+          <div className={styles.container__inner}>
+            <Typography variant="h1" component="h1">
+              Recording
+            </Typography>
+          </div>
         </div>
-      </div>
+      </header>
     </>
   )
 }
