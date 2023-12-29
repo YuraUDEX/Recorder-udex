@@ -3,7 +3,7 @@ import { Recorder } from '@/Components/Recorder/page'
 
 const Home: React.FC = () => {
   return (
-    <main>
+    <main className="main__container">
       <div className="container">
         <Notification />
         <Recorder />

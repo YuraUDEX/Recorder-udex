@@ -8,6 +8,32 @@
   align-items: center
   margin: 90px auto
   max-width: 450px
+  min-height: 250px
+
+.transcription__inner
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  gap: 40px
+  min-height: 200px
+  & p
+    text-align: center
+    line-height: 1.4em
+
+.lottie__anim
+  position: relative
+  width: 200px
+  height: 100px
+  & svg
+    position: absolute
+    width: 250px !important
+    height: 250px !important
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) !important
+    & path
+      fill: #000 !important
 
 .inner__buttons__actions
   display: flex
